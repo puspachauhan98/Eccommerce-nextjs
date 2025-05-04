@@ -2,11 +2,6 @@ import { ProductList } from "../../components/product-list";
 import { stripe } from "../../lib/stripe";
 import Stripe from "stripe";
 
-// Declare the correct type for the products
-interface ProductPageProps {
-  products: Stripe.Product[];
-}
-
 export default async function ProductsPage() {
   // Fetch products from Stripe
   const products = await stripe.products.list({

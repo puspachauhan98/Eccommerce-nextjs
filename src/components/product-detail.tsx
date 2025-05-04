@@ -36,8 +36,7 @@ export const ProductDetail = ({ product }: Props) => {
             src={product.images[0]}
             alt={product.name}
             fill
-            style={{ objectFit: "cover" }}
-            className="group-hover:opacity-90 transition-opacity duration-300 rounded-t-lg"
+            className="object-cover group-hover:opacity-90 transition-opacity duration-300 rounded-t-lg"
           />
         </div>
       )}
