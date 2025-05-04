@@ -5,7 +5,7 @@ import { Button } from "../../components/ui/button";
 import { checkOutAction } from "./checkout-action";
 
 export default function CheckoutPage() {
-    const { items,removeItem, addItem,clearCart } = useCartStore();
+    const { items,removeItem, addItem } = useCartStore();
     const total = items.reduce(
         (acc, item) => acc + item.price * item.quantity,
         0
