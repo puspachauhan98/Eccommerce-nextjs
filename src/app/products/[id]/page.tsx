@@ -1,4 +1,4 @@
-import { stripe } from "../../../lib/stripe";
+import { Stripe } from "stripe";
 import { ProductDetail } from "../../../components/product-detail";
 import { notFound } from "next/navigation";
 
